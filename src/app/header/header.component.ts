@@ -10,5 +10,10 @@ export class HeaderComponent {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+
+    const dropdownContainer = document.querySelector('.dropdown-container');
+    if (dropdownContainer) {
+      dropdownContainer.classList.toggle('active', this.isMenuOpen);
+    }
   }
 }
