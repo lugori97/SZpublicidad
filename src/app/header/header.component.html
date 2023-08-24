@@ -9,7 +9,7 @@
     <a href="#">Acerca</a>
     <a href="#">Contacto</a>
   </div>
-  <div class="dropdown-container">
+  <div class="dropdown-container" [class.active]="isMenuOpen">
     <div class="menu-icon" (click)="toggleMenu()">
       <i class="fas fa-bars"></i> <!-- Icono de menú -->
     </div>
