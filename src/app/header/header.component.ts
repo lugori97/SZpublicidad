@@ -20,4 +20,18 @@ export class HeaderComponent {
       this.isMenuOpen = false;
     }
   }
+
+  isMenuVisible = true; // Por defecto, mostrar el menú
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    // Define una posición límite a partir de la cual el menú debe desaparecer
+    const scrollThreshold = 25;
+
+    // Calcula la posición actual de scroll
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    // Cambia la visibilidad del menú basado en la posición de scroll
+    this.isMenuVisible = scrollPosition < scrollThreshold;
+  }
 }

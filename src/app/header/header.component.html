@@ -1,9 +1,9 @@
 <div class="topbar">
   <div class="logo-container">
     <!-- Aquí va el logo de la página -->
-    <img src="ruta_del_logo.png" alt="Logo" class="logo">
+    <img src="assets/images/posts/S3.png" alt="Logo" class="logo">
   </div>
-  <div class="menu-container">
+  <div class="menu-container" [class.hidden]="!isMenuVisible">
     <!-- Aquí va el menú horizontal -->
     <a href="#">Inicio</a>
     <a href="#">Acerca</a>
@@ -19,9 +19,9 @@
       <a href="#">Contacto</a>
     </div>
   </div>
-  <div class="image-container">
-    <!-- Aquí va la imagen que se mantendrá a la derecha -->
-    <img src="ruta_de_la_imagen.png" alt="Imagen" class="image">
+  <div class="boton-anunciate">
+    <!-- Reemplazamos la imagen con un botón -->
+    <button class="boton">Anunciate</button>
   </div>
 </div>
 
