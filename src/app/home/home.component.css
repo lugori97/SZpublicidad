@@ -1,0 +1,35 @@
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%; /* O ajusta el ancho máximo deseado */
+  width: 100%;
+  padding: 2px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.photo {
+  flex: 1;
+  padding: 5px;
+  box-sizing: border-box;
+  max-width: calc(25% - 10px); /* Para 4 fotos en tamaño de escritorio */
+}
+
+
+@media screen and (max-width: 1200px) {
+  .photo {
+    flex: 1 0 calc(33.333% - 20px); /* Para 3 fotos en tamaño de tablet */
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo {
+    flex: 1 0 calc(50% - 20px); /* Para 2 fotos en tamaño de móvil */
+    max-width: calc(50% - 20px);
+  }
+}

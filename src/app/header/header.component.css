@@ -1,0 +1,116 @@
+.topbar {
+  position: fixed; /* Fijar el topbar en la parte superior */
+  top: 0; /* Colocar el topbar en el borde superior de la pantalla */
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent; /* Fondo transparente */
+  color: #fff;
+  padding: 10px;
+  z-index: 100; /* Ajustar el índice z para que esté por encima de otros elementos */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px; /* Ajustar el tamaño del logo */
+  height: auto;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center; /* Centrar las opciones del menú */
+}
+
+.menu-container a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .logo-container {
+    display: none; /* Ocultar el logo-container en pantallas pequeñas */
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #444;
+    z-index: 1;
+  }
+
+  .dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+
+  .image-container {
+    order: -1; /* Cambiar el orden para que el image-container aparezca primero */
+  }
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 40px; /* Ajustar el tamaño de la imagen */
+  height: auto;
+  margin-right: 10px; /* Ajustar el margen derecho de la imagen */
+}
+.dropdown-menu {
+  display: none;
+  position: relative; /* Cambiar a relative para posicionar el icono */
+}
+
+.menu-icon {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-icon:hover {
+  background-color: #555; /* Cambio de color en el hover */
+}
+
+.dropdown-menu.active {
+  display: flex; /* Mostrar el menú cuando tiene la clase "active" */
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: #444;
+  z-index: 1;
+}
+
+.dropdown-menu.active a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.2s ease; /* Agregar transición para el efecto "hover" */
+}
+
+.dropdown-menu.active a:hover {
+  background-color: #555; /* Cambio de color en el hover */
+}
