@@ -52,8 +52,8 @@
 }
 
 .boton {
-  background-color: #007bff; /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
+  background-color: #000d1b; /* Color de fondo del botón */
+  color: rgb(217, 172, 7); /* Color del texto del botón */
   border: none;
   padding: 5px 10px;
   border-radius: 5px;

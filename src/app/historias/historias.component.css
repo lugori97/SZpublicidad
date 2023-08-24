@@ -3,14 +3,18 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color:black
+  background-color: rgb(136, 130, 130);
+  /* background-image: url('src/assets/images/banners/SzHistorias.webp');
+  background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el div */
+  background-position: center;
+  height: 160px;
 }
 .containerr {
-
-    display:inline-flex;
-    flex: 0;
-    justify-content: center;
-    color:black
+  margin-top: 4px;
+  margin-bottom: 15px;
+  display:inline-flex;
+  justify-content: center;
+  color:black
 
 }
 .derecho, .izquierdo {

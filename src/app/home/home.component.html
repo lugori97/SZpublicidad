@@ -1,26 +1,26 @@
 
   <div class="contenedor">
     <!-- =================== COMPONENT 1 ====================== -->
-    <div class="card bg-primary p-5" style="min-height:280px; background-size: cover; background-image: url('assets/images/banners/bg-food.webp');">
+    <div class="card bg-primary p-5" style="min-height:280px; background-size: cover; background-image: url('assets/images/banners/SzSearchbar.webp');">
       <header class="text-center mt-5">
-        <h2 class="text-white">TENGO QUE CAMBIAR ESTE TITULO</h2>
-        <p class="text-white">Discover the best food and drinks in your area</p>
+        <h2 class="text-white">La experiencia que estabas buscando</h2>
+        <p class="text-white">Descubre los mejores servicios eróticos en tu área</p>
       </header>
       <form class="mx-auto w-100 mb-3" style="max-width: 720px">
         <div class="row g-2 w-100">
         <div class="col flex-grow">
           <div class="input-group">
           <select class="form-select" style="max-width:30%" fdprocessedid="">
-            <option>Moscow</option>
-            <option>Tashkent</option>
-            <option>New York</option>
+            <option>Santiago</option>
+            <option>Viña del Mar</option>
+            <option>Concepción</option>
           </select>
-          <input type="text" placeholder="Food or cafe name" class="form-control" name="">
+          <input type="text" placeholder="Buscar servicio, apariencia, nacionalidad" class="form-control" name="">
           </div>
         </div>
         <!-- col.// -->
         <div class="col-auto">
-          <button class="btn btn-warning" fdprocessedid=""> Find food </button>
+          <button class="btn btn-warning" fdprocessedid=""> Buscar </button>
         </div>
         <!-- col.// -->
         </div>
@@ -28,13 +28,10 @@
       </form>
     </div>
     <!-- =================== COMPONENT 1 .// ================== -->
-    <br>
-    <br>
-    <app-historias class="contenedor"></app-historias>
-    <br>
-    <br>
+    <app-historias class="contenedor"> </app-historias>
+
     <!-- =================== COMPONENT 3 ====================== -->
-    <br>
+
 
     <div class="contain" [ngClass]="{'four-photos': isDesktop, 'three-photos': isTablet, 'two-photos': isMobile}">
       <div *ngFor="let photo of photos" class="photo">
