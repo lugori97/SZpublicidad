@@ -1,15 +1,15 @@
 .topbar {
-  position: fixed; /* Fijar el topbar en la parte superior */
-  top: 0; /* Colocar el topbar en el borde superior de la pantalla */
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent; /* Fondo transparente */
+  background-color: transparent;
   color: #fff;
   padding: 10px;
-  z-index: 100; /* Ajustar el índice z para que esté por encima de otros elementos */
+  z-index: 100;
 }
 
 .logo-container {
@@ -36,12 +36,19 @@
 .dropdown-menu {
   display: none;
 }
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 40px; /* Ajustar el tamaño de la imagen */
+  height: auto;
+  margin-right: 10px; /* Ajustar el margen derecho de la imagen */
+}
 
 @media screen and (max-width: 992px) {
-  .logo-container {
-    display: none; /* Ocultar el logo-container en pantallas pequeñas */
-  }
-
+  .logo-container,
   .menu-container {
     display: none;
   }
@@ -50,8 +57,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px;
-    right: 10px;
+    top: 10px;
+    left: 10px;
     background-color: #444;
     z-index: 1;
   }
@@ -62,18 +69,13 @@
     padding: 5px 10px;
   }
 
-  .image-container {
-    order: -1; /* Cambiar el orden para que el image-container aparezca primero */
+  .topbar {
+    justify-content: flex-end; /* Alinear elementos a la derecha */
   }
-}
 
-.image-container {
-  display: flex;
-  align-items: center;
-}
-
-.image {
-  width: 40px; /* Ajustar el tamaño de la imagen */
-  height: auto;
-  margin-right: 10px; /* Ajustar el margen derecho de la imagen */
+  .image-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
