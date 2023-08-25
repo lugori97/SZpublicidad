@@ -17,6 +17,12 @@
   color:black
 
 }
+.texto{
+  display:inline-flex;
+  max-width: 20px;
+  background-color: rgb(136, 130, 130);
+
+}
 .derecho, .izquierdo {
   display:inline-flex;
   max-width: 20px;
@@ -46,8 +52,8 @@
 }
 
 .circle-img {
-  width: 100px; /* ajusta el tamaño según tus necesidades */
-  height: 100px; /* ajusta el tamaño según tus necesidades */
+  width: 75px; /* Mismo tamaño que definiste para las historias */
+  height: 75px; /* Mismo tamaño que definiste para las historias */
   border-radius: 50%;
   object-fit: cover;
   overflow: hidden;
